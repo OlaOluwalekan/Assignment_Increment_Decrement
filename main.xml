@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/decrement_button"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="18sp"
+        android:text="-"
+		android:background="#f80e00"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="50dp"
+        android:layout_height="fill_parent"
+        android:layout_alignBottom="@+id/decrement_button"
+        android:layout_toRightOf="@+id/decrement_button"
+        android:gravity="center"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/increment_button"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textview"
+        android:textSize="18sp"
+        android:text="+"
+		android:background="#09d829"
+        android:textStyle="bold" />
+	
+</RelativeLayout>
